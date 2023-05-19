@@ -57,7 +57,7 @@ html, body {
 .opponent{
     display: flex;
     height: 20em;
-    width: 25em;
+    width: 20em;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -81,7 +81,7 @@ html, body {
 .player{
     display: flex;
     height: 20em;
-    width: 25em;
+    width: 20em;
     justify-content: center;
     align-items: center;
     text-align: center;
