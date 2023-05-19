@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPSJS</title>
+    <link rel="stylesheet" href="Style/style.css">
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Braah+One&display=swap" rel="stylesheet">
+    <!--Favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="Images/">
+    <link rel="icon" type="image/png" sizes="32x32" href="Images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Images/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <h1 id="title">Rock Paper ScissorsJS</h1>
+    <div class="game-wrapper">
+        <div class="label">
+            <h1>CPU</h1>
+            <h1>You</h1>
+        </div>
+        <div class="battle-wrapper">
+            <div class="opponent">
+                <p id="cpuChoice">🤜</p>
+            </div>
+            <div class="score">
+                <p id="gameResult"></p>
+                <!-- <p>CPU:</p>
+                <p>Score</p>
+                <p>vs</p>
+                <p>Player:</p>
+                <p>Score</p> -->
+            </div>
+            <div class="player">
+                <p id="playerChoice">🤛</p>
+            </div>
+        </div>
+        <div class="button-wrapper">
+            <button type="button" class="button-rock" onClick="playerRock()">
+                <p>✊</p>
+            </button>
+            <button type="button" class="button-paper" onClick="playerPaper()">
+                <p>🖐</p>
+            </button>
+            <button type="button" class="button-scissors" onClick="playerScissors()">
+                <p>✌</p>
+            </button>
+        </div>
+
+    </div>
+</body>
+
+</html>

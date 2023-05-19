@@ -1,0 +1,132 @@
+html, body {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Braah One', sans-serif;
+}
+.game-wrapper{
+    margin: auto;
+    width: 70%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    border: 1px solid grey;
+    border-radius: 25px;
+    box-shadow: 5px 5px 10px 2px rgba(0,0,0,.1);
+}
+
+.label {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.label h1{
+    margin: 0;
+    transform: translateY(+30px);
+    font-size: 24px;
+}
+
+#title {
+    position: absolute;
+    top: 0;
+}
+
+/* Battle */
+.battle-wrapper{
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.score{
+    height: 20em;
+    width: 10em;
+    text-align: center;
+}
+
+/*Opponent*/
+.opponent{
+    display: flex;
+    height: 20em;
+    width: 25em;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 1px solid grey;
+    border-radius: 25px;
+    box-shadow: 5px 5px 10px 2px rgba(0,0,0,.1);
+}
+
+@keyframes idleOpponent {
+    0% {transform: rotate(-5deg);}
+    50% {transform: rotate(5deg);}
+    100% {transform: rotate(-5deg);}
+}
+
+.opponent p {
+    font-size: 15em;
+    animation: idleOpponent 3s infinite;
+}
+
+/*Player*/
+.player{
+    display: flex;
+    height: 20em;
+    width: 25em;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 1px solid grey;
+    border-radius: 25px;
+    box-shadow: 5px 5px 10px 2px rgba(0,0,0,.1);
+}
+
+@keyframes idlePlayer {
+    0% {transform: rotate(5deg);}
+    50% {transform: rotate(-5deg);}
+    100% {transform: rotate(5deg);}
+}
+
+.player p {
+    font-size: 15em;
+    animation: idlePlayer 3s infinite;
+}
+
+
+/*Buttons*/
+.button-wrapper {
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+button {
+    margin: 0 3em 0 3em;
+    height: 10em;
+    width: 10em;
+    border: 2px solid grey;
+    border-radius: 50%;
+    box-shadow: 5px 5px 10px 2px rgba(0,0,0,.1);
+    transition: 200ms;
+}
+
+button:hover {
+    transform: translateY(-10px);
+}
+
+
+button p {
+    margin: 0;
+    font-size: 6em;
+}
