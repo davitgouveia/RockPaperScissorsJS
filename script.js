@@ -16,7 +16,7 @@ function game(playerChoice) {
         document.getElementById("gameResult").innerHTML = "<span style='color:red;font-size:2em'>YOU LOST!</span>";
     }
 
-    var change_path = function(){window.location.href="gametest.html"};
+    var change_path = function(){window.location.href="game.html"};
     setTimeout(change_path ,3000);
 }
 
